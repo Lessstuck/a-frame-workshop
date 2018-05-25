@@ -4,14 +4,14 @@
   </head>
   <body>
 
-    <a-scene shadows>
+    <a-scene >
 
       <a-entity geometry="primitive:box;" position="0 1 0" material="color: red;" shadow="cast: true;">
 
         <a-entity geometry="primitive: cylinder;" position="1 1 1" rotation="45 45 45" scale=".3 .3 .3" material="color: purple;" shadow="cast: true;"></a-entity>
 
         <a-entity geometry="primitive: torus;" position="-1 1 1" rotation="90 45 45" scale=".3 .3 .3" material="color: orange;" shadow="cast: true;"></a-entity>
-        
+
         <a-animation attribute="rotation" dur="4000" to="0 359.999 0" repeat="indefinite" easing="linear"></a-animation>
 
       </a-entity>
@@ -22,10 +22,9 @@
 
       <a-entity light="type: ambient; intensity: .2" ></a-entity>
 
-      <a-entity camera="userHeight: 3;" position="0 0 4" look-controls></a-entity>
+      <a-entity camera="userHeight: 3;" position="0 5 4" look-controls></a-entity>
 
     </a-scene>
 
   </body>
 </html>
-

@@ -4,7 +4,7 @@
   </head>
   <body>
 
-    <a-scene shadow antialiasing>
+    <a-scene antialiasing>
 
       <a-assets>
 
@@ -13,7 +13,7 @@
       </a-assets>
 
       <a-entity id="my-box" sound="src: /audio/sample.mp3; loop: true;" geometry="primitive: box;" position="-40 1.5 0" shadow="cast: true;"  material="color: red;">
-        
+
         <a-animation attribute="position" dur="5000" to="40 1.5 0" direction="alternate" repeat="indefinite"></a-animation>
 
       </a-entity>
@@ -23,7 +23,7 @@
       <a-entity light="type: point; castShadow: true" position="0 6 0"></a-entity>
 
       <a-entity light="type: ambient; intensity: .2" ></a-entity>
-      
+
       <a-entity camera="userHeight: 2;" position="0 0 2" look-controls></a-entity>
 
     </a-scene>
@@ -47,4 +47,3 @@
 
   </body>
 </html>
-

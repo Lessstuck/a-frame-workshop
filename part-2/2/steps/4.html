@@ -2,6 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script type="text/javascript">
+    // added components sould be at the end of the tag for the object, they add a method 
       AFRAME.registerComponent('rainbow', {
         init: function () {
           this.hue = 0;
@@ -43,7 +44,7 @@
         <a-entity geometry="primitive: cylinder;" position="1 1 1" rotation="45 45 45" scale=".3 .3 .3" material="color: purple; metalness: .5; roughness: 0; envMap: #sky-cubemap;" shadow="cast: true;"></a-entity>
 
         <a-entity geometry="primitive: torus;" position="-1 1 1" rotation="90 45 45" scale=".3 .3 .3" material="color: orange; metalness: 1; roughness: 0; envMap: #sky-cubemap;" shadow="cast: true;"></a-entity>
-        
+
         <a-animation attribute="rotation" dur="4000" to="0 359.999 0" repeat="indefinite" easing="linear"></a-animation>
 
         <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3" easing="ease-in-out"></a-animation>
@@ -70,4 +71,3 @@
 
   </body>
 </html>
-
